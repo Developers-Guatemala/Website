@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Socialicious";
-  src: url("../font/socialicious.eot");
-  src: url("../font/socialicious.eot?#iefix") format("embedded-opentype"), url("../font/socialicious.ttf") format("truetype"), url("../font/socialicious.svg#socialicious") format("svg"), url("../font/socialicious.woff") format("woff");
+  src: url("font/socialicious.eot");
+  src: url("font/socialicious.eot?#iefix") format("embedded-opentype"), url("font/socialicious.ttf") format("truetype"), url("font/socialicious.svg#socialicious") format("svg"), url("font/socialicious.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 [data-icon]:before {
