@@ -1,0 +1,31 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, td {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+.stuff {
+  margin-top: 15%;
+  text-align: center;
+}
+
+h4 {
+  color: #666666;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  margin-top: 2em;
+  color: #666666 !important;
+}
+
+.icon-github-sign {
+  margin-left: 2em;
+}
