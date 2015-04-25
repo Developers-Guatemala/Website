@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -8,24 +13,115 @@ h1, h2, h3, h4, h5, h6, p, a, li, td {
   font-weight: 300;
 }
 
-.stuff {
-  margin-top: 15%;
-  text-align: center;
+/*
+ * Contenedores
+ */
+section{
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+article{
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+/*
+ * Titulo
+ */
+h1{
+    font-size: 2.5rem;
 }
 
 h4 {
-  color: #666666;
+    font-size: 1.1rem;
+    color: #666666;
 }
 
-a {
-  text-decoration: none;
+/*
+ * Iconos sociales
+ */
+.social{
+    padding: 10px 0;
+}
+.social li{
+    display: inline-block;
 }
 
-i {
-  margin-top: 2em;
-  color: #666666 !important;
+.social li a{
+    font-size: 2.5rem;
+    color: #666;
+    background-color: transparent;
+    transition: all linear 0.2s;
 }
 
-.icon-github-sign {
-  margin-left: 2em;
+.social li a:hover{
+    color: #3d3d3d;
+}
+
+/*
+ * Spinner
+ */
+.spinner {
+  margin: 0 auto;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+  
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    background-color: #4295d1;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    background-color: #4295d1;
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+.spinner .rect6 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: 0.5s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
 }
